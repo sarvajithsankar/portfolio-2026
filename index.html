@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvajith Sankar | Systems & ML Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #050505; 
+            color: #e2e8f0; 
+            font-family: 'Space Grotesk', sans-serif;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0, transparent 50%), 
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.15) 0, transparent 50%);
+        }
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(16px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        .gradient-text { 
+            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        .card-glow:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.15);
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .cursor-blink { animation: pulse 1s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .interactive-btn:active { transform: scale(0.95); }
+    </style>
+</head>
+<body class="selection:bg-indigo-500/30">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 px-8 py-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-sky-500 rounded-full animate-pulse"></div>
+                <span class="font-bold tracking-widest text-sm uppercase">Node_Mainline</span>
+            </div>
+            <div class="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest text-slate-400">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#credentials" class="hover:text-sky-400 transition-colors">Credentials</a>
+                <a href="#solutions" class="hover:text-sky-400 transition-colors">Solutions</a>
+                <a href="#blog" class="hover:text-sky-400 transition-colors">Insights</a>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://github.com/YOUR_GITHUB" target="_blank" class="text-slate-400 hover:text-white transition-all transform hover:scale-110">GitHub</a>
+                <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="text-slate-400 hover:text-white transition-all transform hover:scale-110">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex flex-col justify-center px-8 pt-20">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="text-sky-500 font-mono mb-4 tracking-tighter">Sarvajith Sankar</h2>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-[0.9] tracking-tighter uppercase">
+                    Architecting <br><span class="gradient-text">Intelligence and Security.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-xl font-light leading-relaxed mb-8 mx-auto md:mx-0">
+                    B.Tech CSE Core Freshman @ VIT Vellore.Optimizing neural model inference for production-scale environments. Deep-diving into RAG architectures and quantized deployment to bring intelligence to the edge.Implementing defense-in-depth protocols within the modern stack. Ensuring that high-concurrency doesn't come at the cost of zero-trust integrity and systemic security. 
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#solutions" class="px-8 py-4 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-sky-900/20 interactive-btn">Analyze Stack</a>
+                    <a href="tel:+918925193716" class="px-8 py-4 glass hover:bg-white/10 font-bold rounded-xl transition-all interactive-btn border border-white/10">Communication Link</a>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-2 bg-gradient-to-r from-sky-500 to-indigo-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <img src="profile.jpg" alt="Sarvajith" class="relative w-72 h-96 object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 border border-white/10 shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="credentials" class="py-32 px-8 max-w-7xl mx-auto">
+        <h3 class="text-3xl font-bold mb-16 flex items-center gap-6 italic">
+            <span class="text-slate-600 font-mono text-lg">01.</span> Validated Credentials
+        </h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <button class="glass p-8 rounded-3xl border-l-4 border-sky-500 text-left transition-all hover:bg-white/5 interactive-btn group">
+                <h4 class="text-xl font-bold group-hover:text-sky-400 transition-colors">VIT Vellore // B.Tech CSE Core</h4>
+                <p class="text-slate-400 text-sm mb-4">Batch of 2029 | Current Research: AI Optimization</p>
+                <span class="text-[10px] font-mono text-sky-500 uppercase tracking-widest font-bold">In-Progress</span>
+            </button>
+            <button class="glass p-8 rounded-3xl border-l-4 border-slate-600 text-left transition-all hover:bg-white/5 interactive-btn group">
+                <h4 class="text-xl font-bold group-hover:text-slate-300 transition-colors">Bala Vidya Mandir // Secondary</h4>
+                <p class="text-slate-400 text-sm mb-4">Batch of 2025 | Advanced STEM Curriculum</p>
+                <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest font-bold">Credentialed</span>
+            </button>
+            <button class="glass p-8 rounded-3xl border-l-4 border-indigo-500 text-left transition-all hover:bg-white/5 interactive-btn group">
+                <h4 class="text-xl font-bold group-hover:text-indigo-400 transition-colors">NexGen AI Labs // Internship</h4>
+                <p class="text-slate-400 text-sm mb-4">ML Systems Research Fellow | 3-Month Intensive</p>
+                <span class="text-[10px] font-mono text-indigo-500 uppercase tracking-widest font-bold">Validated</span>
+            </button>
+            <button class="glass p-8 rounded-3xl border-l-4 border-purple-500 text-left transition-all hover:bg-white/5 interactive-btn group">
+                <h4 class="text-xl font-bold group-hover:text-purple-400 transition-colors">NVIDIA DLI & AWS // Certs</h4>
+                <p class="text-slate-400 text-sm mb-4">Cloud Practitioner & Deep Learning Fundamentals</p>
+                <span class="text-[10px] font-mono text-purple-500 uppercase tracking-widest font-bold">Certified</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-32 px-8 max-w-7xl mx-auto">
+        <h3 class="text-3xl font-bold mb-16 flex items-center gap-6 italic">
+            <span class="text-slate-600 font-mono text-lg">02.</span> Critical Infrastructure
+        </h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-10 rounded-3xl card-glow transition-all">
+                <div class="mb-6 flex justify-between items-center">
+                    <h4 class="text-2xl font-bold text-sky-400">RAG Orchestrator</h4>
+                    <span class="font-mono text-[10px] text-slate-600">v4.2</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    A self-correcting neural retrieval engine using **FAISS** for vector parity and **Gemini 1.5 Flash** for synthesis. Implemented **HNSW (Hierarchical Navigable Small World)** graphs to ensure O(log n) search complexity across 50,000+ document embeddings. Reduced context-window overhead by 30% through dynamic semantic chunking.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[9px] font-bold px-2 py-1 bg-white/5 rounded border border-white/10 uppercase">VectorSearch</span>
+                    <span class="text-[9px] font-bold px-2 py-1 bg-white/5 rounded border border-white/10 uppercase">NLP</span>
+                </div>
+            </div>
+            <div class="glass p-10 rounded-3xl card-glow transition-all">
+                <div class="mb-6 flex justify-between items-center">
+                    <h4 class="text-2xl font-bold text-indigo-400">Zero-Trust Gateway</h4>
+                    <span class="font-mono text-[10px] text-slate-600">Secure</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Hardened Go-based API gateway featuring **Mutual TLS (mTLS)** and JWT validation at the edge. Integrated a custom **Redis-backed rate-limiter** to mitigate Layer 7 DDoS attempts. Designed to handle 5,000 concurrent WebSocket connections with a steady 99.9th percentile latency of <15ms.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[9px] font-bold px-2 py-1 bg-white/5 rounded border border-white/10 uppercase">GoLang</span>
+                    <span class="text-[9px] font-bold px-2 py-1 bg-white/5 rounded border border-white/10 uppercase">Security</span>
+                </div>
+            </div>
+            <div class="glass p-10 rounded-3xl card-glow transition-all">
+                <div class="mb-6 flex justify-between items-center">
+                    <h4 class="text-2xl font-bold text-purple-400">Stream-Link v1</h4>
+                    <span class="font-mono text-[10px] text-slate-600">Asynchronous</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Engineered a real-time data ingestion pipeline using **Apache Kafka** for asynchronous message brokering. Focused on exactly-once processing semantics to prevent data duplication in high-throughput environments. Developed custom consumers in Python for real-time sentiment analysis on live telemetry.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[9px] font-bold px-2 py-1 bg-white/5 rounded border border-white/10 uppercase">Kafka</span>
+                    <span class="text-[9px] font-bold px-2 py-1 bg-white/5 rounded border border-white/10 uppercase">BigData</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-32 px-8 max-w-7xl mx-auto">
+        <h3 class="text-3xl font-bold mb-16 flex items-center gap-6 italic">
+            <span class="text-slate-600 font-mono text-lg">03.</span> Technical Insights
+        </h3>
+        <div class="grid md:grid-cols-2 gap-12">
+            <article class="glass p-12 rounded-[2.5rem] card-glow transition-all group">
+                <div class="flex justify-between items-center mb-8">
+                    <span class="text-xs font-mono text-sky-500 uppercase">Neural Architecture // Vol. 01</span>
+                    <span class="text-xs text-slate-500">March 2026</span>
+                </div>
+                <h4 class="text-3xl font-bold mb-6 group-hover:text-sky-400 transition-colors">The Death of Cloud Latency: Edge Intelligence</h4>
+                <p class="text-slate-400 leading-relaxed mb-6 font-light">
+                    The traditional paradigm of sending every data point to a central cloud for inference is becoming obsolete. As we deploy LLMs on the **Edge (using WebAssembly and 4-bit quantization)**, we eliminate the round-trip latency that kills user experience. My research focuses on the "Quantized-Inference-First" approach, where models are tailored to the hardware's specific L1/L2 cache sizes, ensuring that the bottleneck remains the speed of light, not the speed of the server.
+                </p>
+                <p class="text-slate-300 italic text-sm">> Focus: Mobile-BERT, Llama-cpp, Wasm Inference.</p>
+            </article>
+            <article class="glass p-12 rounded-[2.5rem] card-glow transition-all group">
+                <div class="flex justify-between items-center mb-8">
+                    <span class="text-xs font-mono text-indigo-500 uppercase">Cybersec // Vol. 02</span>
+                    <span class="text-xs text-slate-500">March 2026</span>
+                </div>
+                <h4 class="text-3xl font-bold mb-6 group-hover:text-indigo-400 transition-colors">Zero-Trust: The Hardening of Distributed Meshes</h4>
+                <p class="text-slate-400 leading-relaxed mb-6 font-light">
+                    In a post-perimeter world, identity is the only true firewall. By implementing **Identity-Based Service Meshes**, we can decouple security from IP-based rules. My implementation of Zero-Trust protocols focuses on **Mutual TLS (mTLS)** for service-to-service communication, ensuring that even if one node is compromised, the "blast radius" is zero. This requires a shift from passive monitoring to active, real-time cryptographic verification of every packet.
+                </p>
+                <p class="text-slate-300 italic text-sm">> Focus: Istio, mTLS, JWT, Cryptographic Identity.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="py-20 px-8">
+        <div class="max-w-5xl mx-auto bg-[#0a0a0c] rounded-2xl p-10 font-mono text-sm border border-white/5 shadow-2xl">
+            <p class="text-green-500 mb-4">$ system --diagnostics --all</p>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-2 mb-8">
+                <p class="text-slate-400"><span class="text-sky-400">OS:</span> Unix-ready Engine and Kali Linux</p>
+                <p class="text-slate-400"><span class="text-sky-400">Core:</span> Sarvajith Sankar</p>
+                <p class="text-slate-400"><span class="text-sky-400">B.Tech:</span> VIT Vellore CSE Core </p>
+                <p class="text-slate-400"><span class="text-sky-400">Target:</span> Expertise in Neural Networks and Zero-Trust Security</p>
+            </div>
+            <p class="text-slate-400">CONTACT_LINK: <a href="mailto:Sarvajith2knot8@gmail.com" class="text-white hover:underline">Email : Sarvajith2knot8@gmail.com    Ph : +91-8925193716
+            </a></p>
+            <p class="text-sky-400 mt-8 font-bold">Session Active_ <span class="cursor-blink">|</span></p>
+        </div>
+        <p class="text-center text-slate-700 text-[10px] mt-12 tracking-[0.5em] uppercase">Engineered for Excellence | 2026</p>
+    </footer>
+
+</body>
+</html>
